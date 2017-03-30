@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two buttons</title>
+    
+    <script
+    src="http://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+
+    <button id="red" onclick="set_background()">red</button>
+    <button id="blue">blue</button>
+    <button id="white"onclick="reset()">reset</button>
+
+ 
+<script>
+
+</script>
+
+<script type="text/javascript">
+
+            function set_background(){
+                document.body.style.backgroundColor="red";
+            }
+
+            function reset(){
+                document.body.style.backgroundColor="white";
+            }
+
+            document.getElementById("blue").addEventListener("click", bgblue);
+
+                function bgblue(){
+                                document.body.style.backgroundColor="blue";
+                            }
+
+    </script>
+
+
+
+    
+
+</body>
+</html>
+
+

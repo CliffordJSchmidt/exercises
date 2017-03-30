@@ -1,0 +1,98 @@
+
+/* CSS#1
+#top .second .even {
+    color:red;
+}
+
+*/
+
+/*CSS#2
+#my_element {
+  background-image:url(../img/bg-image.jpg)#ffffff;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:center;
+}
+*/
+
+/* CSS#3 
+div {
+  border: 1px solid #000000;
+  padding: 1em;
+  margin: 1em;
+}
+
+
+
+.container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  flex-direction: space-between;
+  align-items: stretch;
+  margin: o auto
+
+}
+
+.left{
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+.main{
+  order:2;
+  flex: 3 1 auto;
+  align-self: auto;
+}
+
+.right{
+  order:3;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+*/
+
+/* CSS#4 
+
+div {
+  border: 1px solid #000000;
+  padding: 1em;
+}
+
+.outer{
+  position: relative;
+}
+
+.middle{
+  margin:o auto;
+  
+}
+
+.inner{
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 12.5%;
+}
+
+*/
+
+/*done in scss file and compiled to css file - outcome looks different in css */
+
+$primary-color:#ff0066;
+
+nav {
+    border: 1px solid $primary-color;
+}
+nav a {
+    color: $primary-color;
+}
+nav a:hover {
+    background-color: $primary-color;
+    color: #ffffff;
+}
+
+
+

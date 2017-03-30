@@ -1,0 +1,15 @@
+/* CSS#1 html */
+
+
+#top .second .even {
+    color:red;
+}
+
+
+/* CSS#2 html */
+#my_element {
+  background-image:url(../img/bg-image.jpg)#ffffff;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:center;
+}

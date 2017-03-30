@@ -1,0 +1,25 @@
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid black;
+}
+#container {
+    padding: 1em;
+    border: 1px solid black;
+}
+/* write your CSS code here */
+
+
+.box{
+    border: 2px dashed limegreen;
+}
+
+@media screen and (min-width: 600px){
+  #container {
+   -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+} 

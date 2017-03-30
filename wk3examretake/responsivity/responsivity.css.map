@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,UAAW;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,eAAe;;AAE3B,UAAW;EACP,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,eAAe;;;AAK3B,IAAI;EACA,MAAM,EAAE,oBAAoB;;AAGhC,oCAAoC;EAClC,UAAW;IACV,sBAAsB,EAAE,GAAG;IAC1B,cAAc,EAAE,GAAG",
+"sources": ["responsivity.scss"],
+"names": [],
+"file": "responsivity.css"
+}

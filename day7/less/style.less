@@ -1,0 +1,41 @@
+@my_favourite_font_size: 16px;
+@main_color: orange;
+@highlight_color: darkblue;
+
+body{
+    // background: red; // because I like red
+}
+
+p{
+    font-size:@my_favourite_font_size;
+    .padded;
+    .shadowed;
+
+}
+
+ul li {
+    font-size:@my_favourite_font_size;
+}
+
+h1, h2{
+    color: @main_color;
+
+}   
+
+img {
+    .shadowed;
+}
+
+section{ padding: @my_favourite_font_size;
+        border-bottom: 1px solid @main_color;
+     
+}
+
+.padded{
+    padding:1em
+
+}
+
+.shadowed{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

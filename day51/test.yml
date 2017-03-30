@@ -1,0 +1,12 @@
+---
+config:
+  URL: http://mysite.com
+  host: localhost
+  port: 80
+  database:
+    host: localhost
+    user: root
+    password:
+      original: 12345
+      hash: sha1
+      

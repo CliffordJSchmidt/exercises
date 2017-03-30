@@ -1,0 +1,45 @@
+the student:
+    first_name: short string
+    last_name: short string
+    date_of_birth: integer
+    age: integer
+    gender: boolean
+    currently_enrolled: bollean
+    height: decimal
+    weight: decimal
+    uses_heroin: boolean
+    phone_number: short string (integer)
+    nationality: short string
+    wears_glasses: boolean
+    iq: integer
+    disablity: boolean
+    kind_of_disablity: short string
+    email: short string
+    major: short string
+    hates_git: boolean
+    shoe_size: decimal
+    is_present: boolean
+    lateness_ratio: 
+    motto: long string
+    address: long string
+
+    
+house:
+    street:
+    house_nr:
+
+grade:
+    id:
+
+past_education:
+
+
+    
+    
+    
+ 
+
+    email: short string
+
+    past_education:
+    grades:

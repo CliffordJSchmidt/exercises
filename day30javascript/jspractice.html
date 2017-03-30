@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+    /*
+        var triangle = prompt ('How Big?');
+
+        for(var i=0; i< triangle; i++){
+            var line = "";
+        }
+    */
+    </script>
+
+
+    <script>
+       
+
+        //console.log(typeof(age));
+        //console.log(inNan(age));
+console.log('hgh');
+        var age;
+        do{
+            age = prompt ('How old are you?');
+        } while (isNaN(age) || age<1 || age>110);     
+
+
+        if(isNaN(age)){
+            alert('I asked your age!');
+        }else{
+            if(age<18){
+                alert('go to school');
+            }else if(age>60){
+                alert('go to florida');
+            }else{
+                var job= prompt('do you have a job? (yes/no)');
+
+                if(job=='yes' || job=='y'){
+                    alert('go to work');
+                }else if(job =='no'){
+                    alert('go to bar');
+                }else{
+                    alert('go to school you analphabet!');
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import 'shadows';
+$base_font_size: 14 px;
+
+
+
+p {
+    @extend .z-depth-2;
+    line-height: 2em;
+}
+
+$variable_name: 10px;
+
+@mixin nice_line_spacing($font_size) {
+    line-height: $font_size * 2;
+}
+
+p{
+    font-size: $base_font_size;
+    @include nice_line_spacing(14px);
+    padding: $base_font_size /2;
+
+}
+

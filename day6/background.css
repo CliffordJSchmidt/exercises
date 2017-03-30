@@ -1,0 +1,35 @@
+.outer{
+    margin:1em;
+    padding:3em;
+    border: 1px solid black;
+    background-color:red;
+    background: linear-gradient(-90deg, red, yellow);  /*gradient creats a color transition*/
+    position: relative;
+}
+
+.inner{
+    border: 1px solid red;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+    z-index: 1;
+    
+}
+
+/* 4 positions possible... staic (is default), relative, fixed, and absolute */
+.green{
+    position:absolute; /* absolute to the first parent that is relative or absolute*/
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    z-index: 0;
+}
+
+/*
+Can hide or not display aspect by setting
+    display:none;
+        or  
+    visibility:hidden;
+    */

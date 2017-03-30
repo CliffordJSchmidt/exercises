@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+    src="http://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+</head>
+
+<body>
+    
+
+    <div>
+        My age is <span id="age"></span>.
+    </div>
+
+<script>
+    
+    var currentyear = 2017; 
+    var dob= 1980;
+    var age= currentyear-dob;
+
+   document.getElementById('age').innerHTML=age;
+
+   
+
+</script>
+
+
+</body>
+</html>

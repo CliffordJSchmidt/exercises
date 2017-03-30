@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular application</title>
+
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+
+    <script src="myApp.module.js"></script>
+    <script src="myApp.config.js"></script>
+    <script src="czCurrency.filter.js"></script>
+    <script src="product-list/productList.controller.js"></script>
+    <script src="product-list/product-list.component.js"></script>
+
+</head>
+
+<body>
+    <navigation></navigation>
+
+        <div ng-ap="navigationApp">  <!-- can have multiple apps on the same page with their own navigation, can react to different part of the page differently--> 
+        <ng-view></ng-view>
+    </div>
+
+
+    <div ng-ap="myApp">  <!-- can have multiple apps on the same page with their own navigation --> 
+
+        <ng-view></ng-view>
+    </div>
+
+</body>
+
+</html>

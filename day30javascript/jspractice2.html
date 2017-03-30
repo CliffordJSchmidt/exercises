@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+    /*
+        var triangle = prompt ('How Big?');
+
+        for(var i=0; i< triangle; i++){
+            var line = "";
+        }
+    */
+    </script>
+
+
+    <script>
+       //1) ask your user how many children do they have
+
+       var kids = prompt('Do you have kids? (yes/no)');
+                if(kids=='no' || kids=='n'){
+                    alert('Great! You enjoy your life and freedom!');
+                }
+                else if(kids=='yes' || kids=='y')
+                {
+                    
+                    kids= prompt('How many do you have?');
+                    
+                    while (isNaN(kids) || kids<1 || kids>100) {
+                        kids=prompt('How many kids do you have? (enter number)')
+                    }
+                    
+                    
+                    if(kids!=0){
+                         var names="";
+
+                         for(var i=0; i< kids; i++){
+                             var order ='th';
+                             if(i==0) order = 'st';
+                             else if(i==1) order ='nd';
+                             else if(i ==2) order ='rd';
+
+                             var name= prompt('What is the name of your '+ (i+1) +' kid?');
+
+                             if(i==(kids - 1)){
+                                names += name + ".";
+                             }else{
+                             names += name + ', ';
+                             }
+                        }
+                    alert('say hi to '+ names)
+                    }
+                }   
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+        background-color: darkgreen;
+        padding: 10px;
+
+    }
+
+.inside{
+    background-color: red;
+    /*width: calc(50% - 10px);*/
+    width:48%;
+    float: left;
+    /*margin: 5px;*/
+    margin:1%;
+    border: 5px;
+    
+    }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

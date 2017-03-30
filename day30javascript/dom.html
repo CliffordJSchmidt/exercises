@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div id="content">First Content</div>
+
+
+        <script>
+
+           // alert(''); puttnig an alert gives a break in the code and lets you see content before javascript is executed... so you would read First Content. then when you click javascript modifies content
+
+            
+            var element = document.getElementById('content');
+
+            element.innerHTML="JavasScript modified content, cool huh?!";
+            console.log(element);
+
+            element.style.color="#0f0";
+            element.className="class";
+
+            var newElement = document.createElement('div');
+            
+            document.getElementsByTagName('body')[0].appendChild(newElement);
+
+
+        </script>
+  
+
+
+
+    </body>
+</html>

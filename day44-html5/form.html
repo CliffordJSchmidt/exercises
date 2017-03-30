@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Form Example</title>
+	<link rel="stylesheet" href="form.css">	
+</head>
+<body cz-shortcut-listen="true">
+<form id="register">
+<h1>Form</h1>
+    <form action="" method="get">
+    <fieldset class="req"> 
+        <legend>Personal details</legend> 
+        <div> 
+            <label>How much? (in thousands)
+            <input id="number" type="number" name="number" value="1000" min="0" max="100000" step="1000"  autofocus required> 
+            </label>
+        </div>
+        <div> 
+            <label>Why do you need it? (at least 10 characters)
+            <input id="why" name="why" type="text" placeholder="I need it to buy a flower..." pasttern=".{10,}" required> 
+            </label>
+        </div>
+        <div> 
+            <label>Email 
+            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+            </label> 
+        </div> 
+    </fieldset>
+    <fieldset class="not-req">    
+        <div> 
+            <label>Message
+            <textarea id="message" name="message" rows="10"></textarea>
+            </label> 
+        </div>    
+    </fieldset> 
+    <fieldset> 
+        <div> 
+            <input type="submit" value="Submit"> 
+        </div> 
+    </fieldset> 
+</form> 
+
+</body></html>

@@ -1,0 +1,13 @@
+/*
+Write CSS code only to add a border to that box that would:
+
+Have the color #ff8c00
+Be 4 pixels wide.
+Be solid (ie. not dashed or dotted)
+Have rounded corners. The radius of the rounding will be 2 pixels.
+*/
+#thebox {
+  border: 4px solid #ff8c00;
+  border-radius: 2px; }
+
+/*# sourceMappingURL=css2.css.map */

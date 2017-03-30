@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css3style.css">
+    <script src="button.js"></script>
+</head>
+<body>
+
+
+<!-- Forms:
+Write HTML code to present a FORM. This form should:
+
+Be submitted to the same URL where it is presented
+Be submitted with the POST method
+Allow file uploads.
+Contain one text input field, one textarea, one checkbox, one file input field and one submit button.
+The values of the inputs are not important
+Give the fields such names so that when processed with PHP after being submitted, the values can be all retrieved as an array $_POST['contact'] -->
+
+<form action="" method="post" enctype="multipart/form-data">
+    
+    <label for="name">Name</label> 
+    <br>
+    <input type="text" name="name"><br>
+    
+    <br>
+    <label for="message">message</label>
+    <br>
+    <textarea rows="6" cols="16" name="message"></textarea>
+
+    <br>
+    <label for="requirecontact">Want to be contacted?</label>
+    <br>
+    <input type="checkbox" name="requirecontact" value="Yes">Yes<br>
+    <input type="checkbox" name="requirecontact" value="No">No<br>
+    <br>
+
+    <br>
+    <label for="fileupload">Upload file</label>
+    <input type="file" name="fileupload" value="fileupload" id="fileupload"> 
+    <br>
+
+
+    <br>
+    <input type="submit" value="Submit"><br>
+</form>
+
+
+
+</body>
+</html>

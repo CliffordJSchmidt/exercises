@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css3style.css">
+    <script src="button.js"></script>
+</head>
+<body>
+
+<!-- You have the following HTML code. Write CSS code to change the background color of each of the four <span> elements to match the color that is named in it's content. Make sure to leave all the other elements' styles intact. -->
+
+<div id="content">
+    <span>RED</span>
+
+    <span class="colored">BLUE</span>
+
+    <div class="inside">
+        <span>no color for this one</span>
+        <div>
+            <span>ORANGE</span>
+        </div>
+    </div>
+</div>
+<span class="colored">GREEN</span>
+
+
+<!--Write CSS code to add a rounded border to the following DIV element.
+
+Color of the border is to be purple.
+Width of the border should be 2 pixels.
+The border should have rounded corners.
+The radius of the rounded corners should be 6 pixels. -->
+
+<div id="box">
+    BOX CONTENTS
+</div>
+
+
+
+<!-- css5: Write CSS code for the following link tag that would:
+
+Remove the underlining of the text in the link.
+Underline the text in the link when hovered over with a mouse cursor.
+Change the color of the text in the link to #c7c7c7 once the link has been visited. -->
+<a href="https://www.google.com">Google</a>
+
+
+<!-- css6: Write CSS code that would do the following things to the following DIV element:
+
+Fix it at the bottom of the browser viewport.
+Set it's width to be the full width of it's container (the document)
+Change it's text color to white.
+Change it's background to be black and only 75% opaque
+Change the alignment of the text within to be in the center.
+Set it's top and bottom padding to be equal to the current font size and it's left and right padding to be equal to 1/2 the current font size. Use relative units to make sure that this padding changes automatically should the font size change. -->
+<nav class="menubar">Menu bar</nav>
+
+
+<!-- Responsivity 
+Write CSS code for the following HTML that would:
+
+When the viewport has portrait dimensions (ie. device is turned in the portrait direction) show the DIV with class "portrait"and hide the DIV with class "landscape".
+When the viewport has landscape dimensions (ie. device is turned in the landscape direction) show the DIV with class "landscape"and hide the DIV with class "portrait".   -->
+ 
+<div class="portrait">PORTRAIT</div>
+<div class="landscape">LANDSCAPE</div>
+
+
+<!-- jquery 
+You have a button like this:
+
+<button id="like-this" data-id="1">Like this post</button>
+Write jQuery code to:
+
+attach an event listener onto the button that would run when the button is clicked
+the function would run an AJAX request to the URL /api/like.php using the POST method
+as part of the data it would send { id: 1 }
+-->
+<button id="like-this" data-id="1">Like this post</button>
+
+<!-- Events #1: Write plain JS code to attach an onclick event on the button that would write 'clicked' into the console. -->
+<button id="clickable">CLICK ME!</button>
+
+<!-- Events #2 Write a jQuery code to attach two events to the button. The first one would write 'over' into the console when the user moves the mouse cursor over the button. The second one would write 'out' into the console when the user moves the cursor away again. -->
+<button id="clickable">CLICK ME!</button>
+
+
+
+
+
+
+</body>
+</html>

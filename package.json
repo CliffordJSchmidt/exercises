@@ -1,0 +1,34 @@
+{
+  "name": "day14project",
+  "version": "0.0.0",
+  "description": "Team project to try it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "7.4.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "lightbox2": "^2.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "browser-sync": "^2.18.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sourcemaps": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benabraham/cbp-day14project.git"
+  },
+  "author": "Daniel Srb",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/benabraham/cbp-day14project/issues"
+  },
+  "homepage": "https://github.com/benabraham/cbp-day14project#readme"
+}

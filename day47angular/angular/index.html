@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Application</title>
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+    <script src="myApp.module.js"></script>
+    <script src="studentList.controller.js"></script>
+    <script src="productDetail.controller.js"></script>
+
+</head>
+<body>
+        <script>
+            //create a module 'myModule'
+                        // second argument in the [array], if left empty it is created
+                                                
+            var my_module = angular.module('myModule', []);
+
+
+            //retrieve the created module 'myModule'
+            var that_module_i_created = angular.module('myModule');
+
+            // create a module with depenency on 'ngRoute' module -  so the new 'moduleWithRouting' needs the module 'ngRoute' to work 
+            var another_module = angular.module('moduleWithRouting',['ngRoute']);
+        </script>
+
+
+
+
+        <h1> This is an Angular Application </h1>   
+        <!-- directives and components are declared in camelCase, and used in kebab-case. -->
+
+
+        <!-- directive: ng-app,  module= myModule -->
+
+        <div ng-app="myApp" ng-init="name = 'C.J.'; color = 'green'">
+               <div> the result of the calculation is {{ 3 + 3 }} </div>
+
+               <br>
+               <div> That is the same as <span ng-bind="3 + 3"></span></div>
+
+               </br>
+               <div style="color: {{ color}}">My name is {{ name }}</div>
+
+               </br>
+               <hr>
+
+                <!--  controller 'studentList' inherits variables from application 'myApp', but can override the variables with new values as the example shows with the color red -->
+
+                <!-- ng-init over-rides controllers so should not be used in production code -->
+               <div ng-controller="studentList" ng-init="color= 'red'">
+                    <p>This is where the list will be that is controlled by the controller 'studentList'.
+                    </p>
+                    <p>The following are test examples to see if it works: {{color}}  {{1+1}}
+                    </p>
+                </div>
+                    </br>
+
+                    <hr>
+                <div style="color: {{ color}}" ng-controller="studentList">
+                    <p>This is where the list will be that is controlled by the controller 'studentList'.
+                    </p>
+                    <p>The following are test examples to see if it works: {{color}}  {{1+1}}
+                    </p>
+                </div>
+
+                    </br>
+
+                <div ng-controller="studentList">
+                    <p>There are {{ total_students }} students in the course, but in fact there may be only {{ total_students - unofficial_quitters }} students left. 
+                    </p>
+                    <p>
+                    There are {{ countMissingStudents() }} students missing today. 
+                    </p>   
+                    
+                <!-- the following is the example of working with a controllers as part of a component
+                    The monster says {{ $ctrl.property_of_the_controller }}!
+                -->    
+
+                    <p>
+                        <!-- test if the student name is being passed -->
+                        student name test : {{ students[0].name }}  
+                    </p>
+
+
+                    </br>
+                    <hr>
+
+                    <ul>
+                        <li ng-repeat="student in students"> <!-- written on element that needs to be repeated -->
+                            <h3>{{ student.name }}</h3>
+                            <div>Present: {{ student.present }}</div>
+                        </li>
+                    </ul>
+
+                    <hr>
+                    <input type ="text" value="CJ" ng-model="my_name" style="background-color: {{ my_name }}" />
+                        </br>
+                        My name is {{ my_name }}. </br>
+                        Oh yes, really {{ my_name }}
+                    
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                    </br>
+                    <hr>
+                <div ng-controller="productDetail">
+                    <h2>{{ product_name }}</h2>
+                    <div class="description">
+                        {{ description }}
+                    </div> 
+                </div>
+
+
+
+
+
+
+        </div>
+        
+        </br>
+        <hr>
+        <div> This is outside the angular directive ng-app so will not be resolved: {{ name }}</div>
+
+
+
+</body>
+</html>

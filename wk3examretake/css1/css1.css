@@ -1,0 +1,18 @@
+/*
+Change the background of the element with the word 'GREEN' to green color.
+Change the background of the element with the word 'RED' to red color.
+Change the background of the element with the word 'BLUE' to blue color.
+*/
+#main .top .left div {
+  background-color: green; }
+
+#main .top div {
+  background-color: red; }
+
+div#this {
+  background-color: blue; }
+
+/*# sourceMappingURL=css2.css.map */
+
+
+

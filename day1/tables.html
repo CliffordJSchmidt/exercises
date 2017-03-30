@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML tables</title>
+</head>
+
+<body>
+    <table border="1" >
+       <thread>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+       </thread>
+       <tbody>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </tbody>
+   </table>
+
+   <table border="1" >
+       <thread>
+            <tr>
+                <td rowspan="2">A</td>
+            </tr>
+       </thread>
+       <tbody>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+        </tbody>
+   </table>
+
+
+   <table border="1" >
+       <thread>
+            <tr>
+                <td rowspan="2">A</td>
+                <td colspan="2">B</td>
+            </tr>
+       </thread>
+       <tbody>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+        </tbody>
+   </table>
+
+  <table border="1" >
+       <thead>
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+            </tr>
+       </thead>
+       <tbody>
+            <tr>
+                <!-- This is where A is -->
+                <td>C</td>                
+            </tr>
+        </tbody>
+   </table>
+
+<table border="1" >      
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+       
+        <tr>
+            <!-- This is where A is -->
+            <td>C</td>                
+        </tr>
+       
+   </table>
+
+
+</body>
+</html>

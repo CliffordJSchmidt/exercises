@@ -1,0 +1,59 @@
+
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+.contentwrapper {
+    width:100%;
+    height:100%;
+
+}
+
+
+header{
+    border:2px solid red;
+    height:5%;
+}
+
+
+.homepage{
+    border: 2px solid yellow;
+    width: 90%;
+    height: 90vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aboutus{
+    height:20%;
+    border: 1px dasked deepskyblue; 
+}
+
+.top-products{
+    height:30%;
+    border: 1px dashed purple;
+}
+
+.categories{
+    height:50%;
+    border: 1px dashed red;
+}
+
+
+footer{
+    border:2px solid green;
+    height:5%;
+}

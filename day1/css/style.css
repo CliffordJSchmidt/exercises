@@ -1,0 +1,125 @@
+k
+
+body {
+    background-color: #ADD8E6;
+}
+
+
+
+
+
+span {
+    color: red; 
+    font-weight: bold
+}
+
+
+h1 {
+    color: blue;
+}
+
+a {
+    font-weight: bold;
+}
+
+
+p {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/*
+span {
+    background-color: #ADD8E6;
+}
+
+
+p.red {
+    background-color: red;
+}
+
+p.green {
+    background-color: palegreen;
+}
+
+p.blue {
+    background-color: slateblue;
+}
+
+p.blue a{
+    color: yellow;
+}
+*/
+
+
+/* how to write a comment in CSS */
+
+/*
+p.red a, 
+p.green a{
+    color:white;
+    }
+*/
+
+
+
+li.seen.bad{
+    color: silver;
+}
+
+li.seen.good{
+    color:forestgreen;
+}
+
+
+li.unseen{
+    color: firebrick;
+}
+
+span.seen.good{
+    color:forestgreen;
+}
+span.seen.bad{
+    color:silver;
+}
+
+span.unseen{
+    color:firebrick;
+}
+
+
+#biography a{
+    text-decoration: none;
+}
+#biography a:hover{
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial;
+}
+
+h1, h2, h3{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*
+h1 {
+    font-size: 72px;
+    font-weight:normal;
+}
+*/
+
+h2 {
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 4.5 em;
+    font-weight:normal;
+}
+
+
+p {
+    line-height: 1.2em;
+}

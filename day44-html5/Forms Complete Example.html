@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Forms Complete Example</title>
+	<style type="text/css">
+body {
+	margin: 2em 5em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+h1, legend {
+	font-family:Arial, Helvetica, sans-serif;
+}
+label, input, select {
+	display:block;
+}
+input, select {
+	margin-bottom: 1em;
+}
+fieldset {
+	margin-bottom: 2em;
+	padding: 1em;
+}
+fieldset fieldset {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+input[type="checkbox"] {
+	display:inline;
+}
+.range {
+	margin-bottom:1em;
+}	
+.card-type input, .card-type label {
+	display:inline-block;
+}
+	</style>	
+</head>
+<body cz-shortcut-listen="true">
+<form id="register">
+<h1>Form</h1>
+    <fieldset> 
+        <legend>Personal details</legend> 
+        <div> 
+            <label>How much? (in thousands)
+            <input type="number" min="1000" max="100000" step="1000" autofocus> 
+            </label>
+        </div>
+        <div> 
+            <label>Why do you need it? (at least 10 characters)
+            <input id="why" name="why" type="text" placeholder="I need it to buy a flower..." required=""> 
+            </label>
+        </div>
+        <div> 
+            <label>Email 
+            <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+            </label> 
+        </div> 
+        <div> 
+            <label>Address 
+            <textarea id="address" name="address" rows="5" required=""></textarea>
+            </label> 
+        </div>    
+    </fieldset> 
+    <fieldset> 
+        <div> 
+            <button type="submit">Sumbmit form</button> 
+        </div> 
+    </fieldset> 
+</form> 
+
+</body></html>
